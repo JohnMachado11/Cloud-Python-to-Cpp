@@ -1,1 +1,29 @@
-# Placeholder
+# Placeholdersubstitutions:
+  _BUILD_NAME:  compute-func-build
+  _FUNCTION_NAME: compute-func
+  _REGION: us-central1
+
+
+steps:
+
+- name: 'gcr.io/cloud-builders/gcloud'
+  args:
+    - functions
+    - deploy
+    - ${_FUNCTION_NAME}
+    - --gen2
+    - --runtime=python39
+    - --region=${_REGION}
+    - --source=./src
+    - --entry-point=main
+    - --timeout=3600
+    - --memory=1GiB
+    - --set-env-vars
+    - SECRET_MANAGER_URL_ID=${_SECRET_MANAGER_URL_ID}
+    - --trigger-http
+  dir: Python/cloud_functions/Compute_Func
+
+options:
+  logging: CLOUD_LOGGING_ONLY
+
+timeout: 1800s
