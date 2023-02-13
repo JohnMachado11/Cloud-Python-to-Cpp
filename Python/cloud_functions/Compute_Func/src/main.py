@@ -9,4 +9,6 @@ def main(request):
 
     num_c = num_a + num_b
 
-    return num_c
+    int_as_str = str(num_c)
+
+    return int_as_str
