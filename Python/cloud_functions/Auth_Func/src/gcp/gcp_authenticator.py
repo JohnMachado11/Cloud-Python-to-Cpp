@@ -8,7 +8,6 @@ import os
 
 ##################################################
 #              --- Important --- 
-# Always leave LOCAL_GCP_CREDENTIALS = False. 
 # If local testing required then set to True.
 # service_account_key.json will need to be imported
 # from GCP and inserted into gcp/key folder.
