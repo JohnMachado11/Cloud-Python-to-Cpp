@@ -23,4 +23,4 @@ def call_compute_func():
     print("Datatype: ")
     print(type(response.read()))
 
-    return response.read()
+    return response.read().decode("utf-8")
