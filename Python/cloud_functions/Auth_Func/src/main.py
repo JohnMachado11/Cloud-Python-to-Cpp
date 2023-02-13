@@ -1,6 +1,6 @@
 from firebase_utils.firebase_authentication import credentials_check
 from utils.request_handler import request_handler
-
+from utils.compute_caller import call_compute_func
 
 def main(request):
 
@@ -21,7 +21,8 @@ def main(request):
     if credentials_check(user, pw) is True:
         print("User Exists")
         # call compute cloud function here
+        data = call_compute_func()
     else:
         print("User doesn't exist")
 
-    return "Code ran to completion Successfully", 200
+    return data, 200
