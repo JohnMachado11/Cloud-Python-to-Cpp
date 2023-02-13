@@ -8,7 +8,7 @@ import google.oauth2.id_token
 def call_compute_func():
     """
     Calls the Cloud Function "Compute_Func"
-    :return: *** Placeholder
+    :return: String
     """
 
     url = cf_url[0]
@@ -20,7 +20,4 @@ def call_compute_func():
     req.add_header("Authorization", f"Bearer {id_token}")
     response = urllib.request.urlopen(req)
 
-    print("Datatype: ")
-    print(type(response.read()))
-
-    return response.read().decode("utf-8")
+    return response.read()
