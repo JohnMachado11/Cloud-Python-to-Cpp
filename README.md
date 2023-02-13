@@ -2,4 +2,4 @@
 
 WIP...
 
-Python GCP Cloud Functions interaction with C++
+GCP (Google Cloud Platform) Cloud Functions connection with C++ code.
