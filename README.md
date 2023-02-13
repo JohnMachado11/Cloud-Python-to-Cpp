@@ -2,4 +2,4 @@
 
 WIP...
 
-Python GCP Cloud Functions callable via C++
+Python GCP Cloud Functions interaction with C++
