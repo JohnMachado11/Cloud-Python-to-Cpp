@@ -1,5 +1,10 @@
 # Cloud-Python-to-Cpp
 
-WIP...
+### Python GCP Cloud Functions backend and C++ connectivity
 
-Python GCP Cloud Functions backend and C++ connectivity
+Still WIP...
+
+TODO: 
+  Compute Cloud Function implementation
+
+
