@@ -9,6 +9,6 @@ def main(request):
 
     num_c = num_a + num_b
 
-    int_as_str = str(num_c)
+    text = f"Your number is: {num_c}"
 
-    return int_as_str
+    return text
