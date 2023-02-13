@@ -8,6 +8,7 @@ load_dotenv()
 # -------------------------------
 #   --- Important Variables ---
 f_creds = [] # Firebase
+cf_url = [] # Cloud Functions
 secrets_client = gcp_clients[0]
 # -------------------------------
 
@@ -33,10 +34,12 @@ def secrets_access():
     f_auth_domain = get_secret("F_AUTH_DOMAIN")
     f_db_url = get_secret("F_DB_URL")
     f_storage_bucket = get_secret("F_STORAGE_BUCKET")
+    cf_compute_func_url = get_secret("CF_COMPUTE_FUNC_URL")
 
     f_creds.append(f_api_key)
     f_creds.append(f_auth_domain)
     f_creds.append(f_db_url)
     f_creds.append(f_storage_bucket)
+    cf_url.append(cf_compute_func_url)
 
 secrets_access()
