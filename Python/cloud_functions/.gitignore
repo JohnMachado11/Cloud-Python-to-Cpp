@@ -2,5 +2,7 @@ Auth_Func/src/gcp/key/*
 !Auth_Func/src/gcp/key/.gitkeep
 Compute_Func/src/gcp/key/*
 !Compute_Func/src/gcp/key/.gitkeep
+Insert_Int_Func/src/gcp/key/*
+!Insert_Int_Func/src/gcp/key/.gitkeep
 __pycache__
 .env
