@@ -1,6 +1,7 @@
 # Cloud-Python-to-Cpp
 
-### Python GCP Cloud Functions backend and C++ connectivity
+### Python GCP Cloud Functions backend and C++ connectivity. 
+### Extensive Authentication system, Cloud Build CI/CD pipeline, System Automation and more.
 
 Still WIP...
 
