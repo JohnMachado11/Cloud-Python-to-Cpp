@@ -1,3 +1,7 @@
-# from google.cloud import bigquery
 
-# bq_client = bigquery.Client(credentials=credentials)
+
+def main(request):
+
+    text = "Compute Function is called!"
+
+    return text
