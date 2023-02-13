@@ -24,7 +24,7 @@ def request_handler(data):
 
         return is_valid_email(email)
 
-    # Check contents that 'data' is not empty and that the correct keys are present  
+    # Check that the contents of "data" is not empty and that the correct keys are present  
     if data is None or set(data.keys()) != {"email", "password"}:
         return "Invalid JSON data", 400
 
