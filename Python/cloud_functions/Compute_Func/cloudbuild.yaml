@@ -1,4 +1,4 @@
-# Placeholdersubstitutions:
+substitutions:
   _BUILD_NAME:  compute-func-build
   _FUNCTION_NAME: compute-func
   _REGION: us-central1
