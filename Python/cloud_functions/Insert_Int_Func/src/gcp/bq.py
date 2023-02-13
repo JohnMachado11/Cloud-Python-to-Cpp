@@ -26,7 +26,7 @@ def dataframe_creation(number):
     df['Integer'] = df['Integer'].astype(int)
     df["Timestamp"] = pd.to_datetime(df["Timestamp"])
 
-    print("Data being inserted: \n", df, "\n")
+    print("Data being inserted: \n", df.to_string(index=False), "\n")
 
     bigquery_input(df)
 
