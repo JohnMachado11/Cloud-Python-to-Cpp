@@ -28,5 +28,6 @@ def main(request):
         data = call_compute_func()
     else:
         print("User doesn't exist")
+        return "User Not Found", 404
 
     return data, 200
