@@ -2,9 +2,9 @@
 
 This project was designed to leverage **several** `Google Cloud Platform` cloud services to create a robust and automated system which can be interacted with via `C++` code. 
 
-Why `C++`? The use case of that programming language specifically in the context of this project would be for example, having a `C++` based physical device pull from the cloud the latest `firmware` it needs, or just any kind of data from the cloud really.
+Why `C++`? The use case of that programming language specifically in the context of this project would be for example, having a `C++` based physical device pull from the cloud the latest `firmware` it needs or just any kind of data from the cloud really.
 
-Ultimately in the end, a secure API to pull data from a `BigQuery` database table was designed and it can actually be called by **any** programming language as long as the correct credentials get sent in `json` format to the `Auth_Func`. 
+Ultimately in the end, a secure API to pull data from a `BigQuery` database table was designed and it can actually be called by **any** programming language as long as the correct credentials get sent in `json` format to the `Auth_Func`. If interested in testing reach out directly via email [here](cpp.cloud.project@gmail.com). 
 
 The programming language `Python` is utilized to create the entire backend component on `Google Cloud Platform`. 
 
@@ -75,4 +75,45 @@ Let's talk about each:
 - `Insert_Int_Func` is triggered every **6 hours** by `Cloud Scheduler`
 - A randomized integer between the ranges of 0-75 is inserted into a `BigQuery` table
 
+---
+
+`Python`
+
+Backend was designed with `Python` version `3.9`.
+
+Libraries:
+
+`google-cloud-secret-manager==2.12.6`
+
+`google-cloud-bigquery==3.5.0`
+
+`python-dotenv==0.21.0`
+
+`Pyrebase4==4.5.0`
+
+`pyarrow==11.0.0`
+
+`pandas==1.5.3`
+
+---
+
+`C++`
+
+Code tested and compiled on MacOS Ventura. 
+
+- Compiler: `g++` 
+- `C++` Standard: `17`
+
+How to run `C++` code:
+
+Be aware that preset credentials will be required to access the API.
+
+- Be inside `C++/Cloud_Caller/src` folder
+- Open terminal
+- Type `g++ -o main main.cpp -lcurl` on terminal
+- Type `./main` on terminal
+
+Libraries:
+
+`libucurl` - https://curl.se/libcurl/
 
