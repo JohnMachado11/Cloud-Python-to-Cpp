@@ -2,6 +2,7 @@ from firebase_utils.firebase_authentication import credentials_check
 from utils.request_handler import request_handler
 from utils.compute_caller import call_compute_func
 
+
 def main(request):
 
     # Get JSON and convert to Dictionary
@@ -17,10 +18,13 @@ def main(request):
     user = request_json["email"]
     pw = request_json["password"]
 
+    # Maybe add decrypt here for password
+
     # Check that the user exists in Firebase
     if credentials_check(user, pw) is True:
-        print("User Exists")
-        # call compute cloud function here
+        print("User Exists, calling Compute_Func Cloud Function\n")
+        
+        # Compute_Func Cloud Function called
         data = call_compute_func()
     else:
         print("User doesn't exist")

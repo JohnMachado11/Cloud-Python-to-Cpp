@@ -1,8 +1,7 @@
-from gcp.codex import cf_url
-# import requests
-import urllib
 import google.auth.transport.requests
 import google.oauth2.id_token
+from gcp.codex import cf_url
+import urllib
 
 
 def call_compute_func():

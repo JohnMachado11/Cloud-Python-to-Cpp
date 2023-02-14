@@ -1,14 +1,18 @@
+from gcp.bq import does_table_exist, records_from_table
 
 
 def main(request):
 
-    print("Compute Function Called!")
+    print("Compute_Func Cloud Function Called!\n")
 
-    num_a = 5
-    num_b = 5
+    result = does_table_exist()
 
-    num_c = num_a + num_b
+    if result is True:
+        numbers = records_from_table()
+        nums_as_str = f"{numbers}"
 
-    text = f"Your number is: {num_c}"
+        print(f"5 most recent table records: \n{nums_as_str}")
 
-    return text
+        return nums_as_str
+    else:
+        return "No Data Found", 404

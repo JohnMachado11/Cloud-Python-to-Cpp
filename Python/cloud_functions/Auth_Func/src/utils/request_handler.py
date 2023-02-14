@@ -10,7 +10,7 @@ def request_handler(data):
     def email_validator(email):
         """
         Check that the email is in the
-        correct format of "name@email.com
+        correct format of 'name@domain.com'
         :return: Boolean
         """
 
@@ -32,14 +32,12 @@ def request_handler(data):
     if not isinstance(data["email"], str):
         return "Invalid email format", 400
 
-    # Check that the email is in the correct format of "name@email.com"
+    # Check that the email is in the correct format of "name@domain.com"
     if email_validator(data["email"]) is False:
         return "Invalid email format", 400
 
     # Check that the data type of the password is a string
-    if not isinstance(data['password'], str):
+    if not isinstance(data["password"], str):
         return "Password should be a string", 400
-
-    # Add decrypt here for password
 
     return True
