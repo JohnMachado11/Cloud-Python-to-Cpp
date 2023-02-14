@@ -71,7 +71,7 @@ Let's talk about each:
 
 3. `Insert_Int_Func` The data insertion system. 
 
-- The `Insert_Int_Func` operates independently from the `Auth_Func` and `Compute_Func`. 
+- The `Insert_Int_Func` operates independently from the `Auth_Func` and `Compute_Func` and its automated. 
 - `Insert_Int_Func` is triggered every **6 hours** by `Cloud Scheduler`
 - A randomized integer between the ranges of 0-75 is inserted into a `BigQuery` table
 
