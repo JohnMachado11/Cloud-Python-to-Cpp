@@ -3,7 +3,7 @@ import re
 
 def request_handler(data):
     """
-    Parses the contents of the request data
+    Validates the data of the Cloud Function request
     :return: String + Int or Boolean
     """
 
