@@ -5,7 +5,7 @@
 
 int main() {
 
-    std::cout << "Sending POST Request to Cloud Function" << std::endl;
+    std::cout << std::endl << "Sending POST Request to Cloud Function" << std::endl << std::endl;
 
     CURL *curl;
     CURLcode res;
@@ -23,6 +23,8 @@ int main() {
 
         headers = curl_slist_append(headers, "Content-Type: application/json");
         curl_easy_setopt(curl, CURLOPT_HTTPHEADER, headers);
+        
+        std::cout << "Values of 5 most recent records from BigQuery table: " << std::endl;
 
         res = curl_easy_perform(curl);
 
@@ -31,7 +33,7 @@ int main() {
                 curl_easy_strerror(res));
         else {
             curl_easy_getinfo(curl, CURLINFO_RESPONSE_CODE, &http_code);
-            std::cout << "\nHTTP status code: " << http_code << std::endl;
+            std::cout << std::endl << "HTTP status code: " << http_code << std::endl << std::endl;
         }
 
         curl_easy_cleanup(curl);
