@@ -90,17 +90,17 @@ Backend was designed with `Python` version `3.9`.
 
 Libraries:
 
-`google-cloud-secret-manager==2.12.6` - https://pypi.org/project/google-cloud-secret-manager/
+`google-cloud-secret-manager==2.12.6` - [PyPi url](https://pypi.org/project/google-cloud-secret-manager/)
 
-`google-cloud-bigquery==3.5.0` - https://pypi.org/project/google-cloud-bigquery/
+`google-cloud-bigquery==3.5.0` - [PyPi url](https://pypi.org/project/google-cloud-bigquery/)
 
-`python-dotenv==0.21.0`- https://pypi.org/project/python-dotenv/
+`python-dotenv==0.21.0`- [PyPi url](https://pypi.org/project/python-dotenv/)
 
-`Pyrebase4==4.5.0` - https://pypi.org/project/Pyrebase4/
+`Pyrebase4==4.5.0` - [PyPi url](https://pypi.org/project/Pyrebase4/)
 
-`pyarrow==11.0.0` - https://pypi.org/project/pyarrow/
+`pyarrow==11.0.0` - [PyPi url](https://pypi.org/project/pyarrow/)
 
-`pandas==1.5.3` - https://pypi.org/project/pandas/
+`pandas==1.5.3` - [PyPi url](https://pypi.org/project/pandas/)
 
 ---
 
