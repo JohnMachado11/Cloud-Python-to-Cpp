@@ -1,7 +1,7 @@
 ## Cloud-Python-to-Cpp
 
 ### Cloud System Architecture
-![System Architecture](https://i.imgur.com/Z7flBGn.png)
+![System Architecture](https://i.imgur.com/DQSJuTB.png)
 
 
 This project was designed to leverage **several** `Google Cloud Platform` cloud services to create a robust and automated system which can be interacted with via `C++` code. 
