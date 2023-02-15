@@ -115,10 +115,10 @@ How to run `C++` code:
 
 Be aware that preset credentials will be required to access the API.
 
-- Be inside `C++/Cloud_Caller/src` folder
 - Open terminal
-- Type `g++ -o main main.cpp -lcurl` on terminal
-- Type `./main` on terminal
+- Navigate to `C++/Cloud_Caller/src` folder
+- Type `g++ -o main main.cpp -lcurl` in terminal
+- Type `./main` in terminal
 
 Libraries:
 
