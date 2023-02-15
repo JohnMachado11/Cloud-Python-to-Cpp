@@ -1,10 +1,14 @@
 ## Cloud-Python-to-Cpp
 
+### Cloud System Architecture
+![System Architecture](https://i.imgur.com/Z7flBGn.png)
+
+
 This project was designed to leverage **several** `Google Cloud Platform` cloud services to create a robust and automated system which can be interacted with via `C++` code. 
 
-Why `C++`? The use case of that programming language specifically in the context of this project would be for example, having a `C++` based physical device pull from the cloud the latest `firmware` it needs or just any kind of data from the cloud really.
+Why `C++`? The use case of that programming language specifically in the context of this project would be, for example, to have a physical device which runs on `C++` pull from the cloud the latest `firmware` it needs. Or any kind of data.
 
-Ultimately in the end, a secure API to pull data from a `BigQuery` database table was designed and it can actually be called by **any** programming language as long as the correct credentials get sent in `json` format to the `Auth_Func`. 
+Ultimately, a secure API to pull data from a `BigQuery` database table was designed and it can actually be called by **any** programming language as long as the correct credentials get sent in `json` format to the `Auth_Func`. 
 
 The programming language `Python` is utilized to create the entire backend component on `Google Cloud Platform`. 
 
@@ -12,7 +16,7 @@ The programming language `Python` is utilized to create the entire backend compo
 
 `Looker Studio` data visualization dashboard for viewing data from the `BigQuery` table located [here](https://lookerstudio.google.com/u/2/reporting/6a9eaf10-58c9-4d75-8690-9a2759b7a256/page/VibFD). 
 
-For testing of the API, if anyone is interested reach out directly via email [here](cpp.cloud.project@gmail.com). 
+For testing of the API, if there is interest reach out directly via email [here](cpp.cloud.project@gmail.com). 
 
 
 ------
@@ -84,7 +88,7 @@ Let's talk about each:
 
 ---
 
-`Python`
+`Python` Programming Language
 
 Backend was designed with `Python` version `3.9`.
 
@@ -104,7 +108,7 @@ Libraries:
 
 ---
 
-`C++`
+`C++` Programming Language
 
 Code tested and compiled on MacOS Ventura. 
 
@@ -122,5 +126,5 @@ Be aware that preset credentials will be required to access the API.
 
 Libraries:
 
-`libucurl` - https://curl.se/libcurl/
+`libcurl` - https://curl.se/libcurl/
 
