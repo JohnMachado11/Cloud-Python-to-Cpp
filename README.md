@@ -4,11 +4,16 @@ This project was designed to leverage **several** `Google Cloud Platform` cloud 
 
 Why `C++`? The use case of that programming language specifically in the context of this project would be for example, having a `C++` based physical device pull from the cloud the latest `firmware` it needs or just any kind of data from the cloud really.
 
-Ultimately in the end, a secure API to pull data from a `BigQuery` database table was designed and it can actually be called by **any** programming language as long as the correct credentials get sent in `json` format to the `Auth_Func`. If interested in testing reach out directly via email [here](cpp.cloud.project@gmail.com). 
+Ultimately in the end, a secure API to pull data from a `BigQuery` database table was designed and it can actually be called by **any** programming language as long as the correct credentials get sent in `json` format to the `Auth_Func`. 
 
 The programming language `Python` is utilized to create the entire backend component on `Google Cloud Platform`. 
 
 `Firebase` is also utilized as part of the authentication system. 
+
+`Looker Studio` data visualization dashboard for viewing data from the `BigQuery` table located [here](https://lookerstudio.google.com/u/2/reporting/6a9eaf10-58c9-4d75-8690-9a2759b7a256/page/VibFD). 
+
+For testing of the API, if anyone is interested reach out directly via email [here](cpp.cloud.project@gmail.com). 
+
 
 ------
 
@@ -27,6 +32,8 @@ The programming language `Python` is utilized to create the entire backend compo
 - `Cloud Scheduler` - Cron job scheduler for any job in the cloud
 
 - `Cloud Storage` - Stores the latest `Python` code for the `Cloud Functions`
+
+- `Looker Studio` - Data visualization tool
 
 - `Secret Manager` - Secure storage system for sensitive data
 
