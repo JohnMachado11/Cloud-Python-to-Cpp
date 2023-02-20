@@ -64,7 +64,7 @@ Let's talk about each:
 
 1. `Auth_Func` The authentication system.   
 
-- Everything starts here. Way before any data can be extracted from the `BigQuery` database table, a `request` from the user has to pass multiple tests before the code can proceeed. 
+- Everything starts here. Way before any data can be extracted from the `BigQuery` database table, a `request` from the user has to pass multiple tests before the code can proceed. 
 
 - 1. The `request` cannot be empty and the `json` must have the correct keys, `email` and `password`.
 - 2. The value of the `email` key of the `json` must be a string.
