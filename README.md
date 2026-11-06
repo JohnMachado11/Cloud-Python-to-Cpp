@@ -1,5 +1,7 @@
 ## Cloud-Python-to-Cpp
 
+> **This project was shut down on November 6, 2026.** The Cloud Functions, `BigQuery` table, `Cloud Scheduler` job, `Firebase Authentication` and `Looker Studio` dashboard described below no longer work. The code remains here for reference.
+
 ### Cloud System Architecture
 ![System Architecture](https://i.imgur.com/DQSJuTB.png)
 
@@ -13,12 +15,6 @@ Ultimately, a secure API to pull data from a `BigQuery` database table was desig
 The programming language `Python` is utilized to create the entire backend component on `Google Cloud Platform`. 
 
 `Firebase` is also utilized as part of the authentication system. 
-
-`Looker Studio` data visualization dashboard for viewing data from the `BigQuery` table located [here](https://lookerstudio.google.com/u/2/reporting/6a9eaf10-58c9-4d75-8690-9a2759b7a256/page/VibFD). 
-
-For testing of the API, if there is interest reach out directly via email [here](mailto:cpp.cloud.project@gmail.com). 
-
-
 
 
 ------
